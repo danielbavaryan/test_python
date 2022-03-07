@@ -8,6 +8,7 @@ kafka_client = KafkaClient('localhost:9092', 'topic_1', 'group_1')
 kafka_client.start()
 
 
+
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
